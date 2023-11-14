@@ -1,5 +1,7 @@
-import type { BuildConfig } from 'unbuild'
 import { build as unbuild } from 'unbuild'
-export function build(options?: BuildConfig) {
-  unbuild(process.cwd(), false, options)
+import { getConfig } from './config'
+export async function build() {
+  const config = await getConfig()
+  await unbuild(process.cwd(), !!config.build?.stub, { ...config.build, entries: config.entries })
 }
+
