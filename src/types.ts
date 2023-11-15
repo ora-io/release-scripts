@@ -4,11 +4,16 @@ export interface UserConfig {
   entries: BuildConfig['entries']
   build?: Omit<BuildConfig, 'entries'>
   release?: ReleaseConfig
+  publish?: PublishConfig
 }
 
 export interface ReleaseConfig {
   modifyVersion?: boolean
   changelog?: boolean
+}
+export interface PublishConfig {
+  packageManager?: 'npm' | 'pnpm'
+  provenance?: boolean
 }
 
 export type UserConfigFnObject = (...args: any[]) => UserConfig

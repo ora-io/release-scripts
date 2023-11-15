@@ -3,7 +3,7 @@ import { version } from '../package.json'
 import { build } from './build'
 import { release } from './release'
 export function run() {
-  const cli = cac()
+  const cli = cac('scripts')
   cli.command('build', 'build project')
     .action(() => {
       build()

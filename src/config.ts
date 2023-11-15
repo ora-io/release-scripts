@@ -17,7 +17,7 @@ export async function loadConfigFromFile(configFile?: string, configRoot: string
           rewrite: rewrite as any,
         }
       : {
-          files: 'release.config',
+          files: 'scripts.config',
           extensions: ['ts', 'mts', 'cts', 'js', 'mjs', 'cjs', 'json'],
           rewrite: rewrite as any,
         }],

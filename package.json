@@ -35,6 +35,9 @@
       ]
     }
   },
+  "bin": {
+    "scripts": "bin/index.js"
+  },
   "files": [
     "dist"
   ],
@@ -52,9 +55,10 @@
   "dependencies": {
     "bumpp": "^9.2.0",
     "cac": "^6.7.14",
-    "execa": "^8.0.1",
     "fs-extra": "^11.1.1",
+    "mri": "^1.2.0",
     "picocolors": "^1.0.0",
+    "semver": "^7.5.4",
     "unbuild": "^2.0.0",
     "unconfig": "^0.3.11"
   },
@@ -64,6 +68,7 @@
     "@murongg/eslint-config": "^0.2.0",
     "@types/fs-extra": "^11.0.4",
     "@types/node": "^18.16.16",
+    "@types/semver": "^7.5.5",
     "eslint": "^8.41.0",
     "esno": "^0.16.3",
     "lint-staged": "^13.2.2",

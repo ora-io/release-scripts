@@ -13,4 +13,7 @@ export const defaultConfig: UserConfig = {
     modifyVersion: true,
     changelog: false,
   },
+  publish: {
+    packageManager: 'npm',
+  },
 }
