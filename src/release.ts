@@ -1,23 +1,30 @@
 /* eslint-disable no-console */
 import path from 'node:path'
 import fs from 'fs-extra'
+// import { versionBump } from 'bumpp'
 import { getConfig } from './config'
 import { runIfNotDry, step } from './utils'
 
 export async function release() {
   const config = await getConfig()
   const rootDir = process.cwd()
-  const { version: oldVersion } = fs.readJSONSync(path.join(rootDir, 'package.json'))
-  if (config.release.modifyVersion) {
+  // const { version: oldVersion } = fs.readJSONSync(path.join(rootDir, 'package.json'))
+  if (config.release.modifyVersion)
     step('\n📦Updating package version...')
-    await runIfNotDry('npx bumpp --no-commit --no-tag --no-push', { cwd: rootDir })
-  }
+    // TODO: bumpp
+    // await runIfNotDry('npx bumpp --no-commit --no-tag --no-push', { cwd: rootDir })
+    // await versionBump({
+    //   commit: false,
+    //   tag: false,
+    //   push: false,
+    // })
+
   const { version } = fs.readJSONSync(path.join(rootDir, 'package.json'))
 
-  if (oldVersion === version && config.release.modifyVersion) {
-    console.log('canceled')
-    process.exit()
-  }
+  // if (oldVersion === version && config.release.modifyVersion) {
+  //   console.log('canceled')
+  //   process.exit()
+  // }
   gitRun(rootDir, version)
 }
 
