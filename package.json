@@ -36,7 +36,7 @@
     }
   },
   "bin": {
-    "scripts": "bin/index.js"
+    "cle-scripts": "bin/index.js"
   },
   "files": [
     "dist"
