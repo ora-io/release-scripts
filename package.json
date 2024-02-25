@@ -39,7 +39,8 @@
     "cle-scripts": "bin/index.js"
   },
   "files": [
-    "dist"
+    "dist",
+    "bin"
   ],
   "scripts": {
     "build": "unbuild",
