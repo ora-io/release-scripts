@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@murongg/utils':
+        specifier: ^0.1.20
+        version: 0.1.20
       bumpp:
         specifier: ^9.3.0
         version: 9.3.0
@@ -42,6 +45,9 @@ importers:
       '@murongg/eslint-config':
         specifier: ^0.2.1
         version: 0.2.1(eslint@8.57.0)(typescript@5.3.3)
+      '@ora-io/release-scripts':
+        specifier: workspace:^
+        version: 'link:'
       '@types/fs-extra':
         specifier: ^11.0.4
         version: 11.0.4
@@ -1097,6 +1103,10 @@ packages:
       - supports-color
       - typescript
     dev: true
+
+  /@murongg/utils@0.1.20:
+    resolution: {integrity: sha512-lRQgr9/4gqXgUkGkVUyCBxt9fPxGGdgelSESjDL7eKpXygGtsb0EZoCgGG5fUQ7Z/Qqd7Wbgc+E+E4CPOCrIYg==}
+    dev: false
 
   /@nodelib/fs.scandir@2.1.5:
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}

@@ -53,6 +53,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@murongg/utils": "^0.1.20",
     "bumpp": "^9.3.0",
     "cac": "^6.7.14",
     "fs-extra": "^11.2.0",
@@ -66,6 +67,7 @@
     "@antfu/ni": "^0.21.12",
     "@antfu/utils": "^0.7.7",
     "@murongg/eslint-config": "^0.2.1",
+    "@ora-io/release-scripts": "workspace:^",
     "@types/fs-extra": "^11.0.4",
     "@types/node": "^18.19.18",
     "@types/semver": "^7.5.8",

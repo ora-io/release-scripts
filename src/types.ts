@@ -1,7 +1,11 @@
-import type { BuildConfig } from 'unbuild'
+import type { BuildConfig, BuildEntry } from 'unbuild'
+
+export type UserConfigEntries = ((BuildEntry & {
+  build?: Omit<BuildConfig, 'entries'>
+}) | string)[]
 
 export interface UserConfig {
-  entries: BuildConfig['entries']
+  entries: UserConfigEntries
   build?: Omit<BuildConfig, 'entries'>
   release?: ReleaseConfig
   publish?: PublishConfig
