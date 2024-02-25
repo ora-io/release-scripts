@@ -1,19 +1,18 @@
 {
-  "name": "@hyperoracle/release-scripts",
+  "name": "@ora-io/release-scripts",
   "type": "module",
   "version": "0.0.0",
   "packageManager": "pnpm@8.15.4",
   "description": "",
   "author": "MuRong <hi@mrong.me>",
   "license": "MIT",
-  "funding": "https://github.com/sponsors/murongg",
-  "homepage": "https://github.com/murongg/@hyperoracle/release-scripts#readme",
+  "homepage": "https://github.com/@ora-io/release-scripts#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/murongg/@hyperoracle/release-scripts.git"
+    "url": "git+https://github.com/@ora-io/release-scripts.git"
   },
   "bugs": {
-    "url": "https://github.com/murongg/@hyperoracle/release-scripts/issues"
+    "url": "https://github.com/@ora-io/release-scripts/issues"
   },
   "keywords": [],
   "sideEffects": false,
